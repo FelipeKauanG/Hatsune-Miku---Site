@@ -1,33 +1,47 @@
+@font-face {
+    font-family: "japan";
+    src: url(fontes/Gobold\ Bold.otf);
+}
+
 *{
     image-rendering: pixelated;
-    padding: 0;
+    padding: 10px;
+    font-family: "japan";
 }
 :root{
     --cor1: rgba(0, 255, 247, 0.5);
-    --cor2: rgba(0, 129, 129, 0.5);
+    --cor2: rgb(17, 100, 110);
+    --cor3: rgba(0, 200, 200, 0.5);
 }
 body{
-    background-color: gray;
+    background-color: var(--cor2);
     display: flex;
 }
-
 article{
     text-align: center;
     width: 80%;
     margin: 10px auto;
     border-radius: 20px;
-    background-image: radial-gradient(rgb(0, 182, 206), rgb(0, 67, 129));
     padding: 25px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
-    border: 1px solid black;
+    background-image: url(imagens/leek-3b7c7819069c1d1e.png);
+    background-size: 15%;
 }
-article p,h1{
-    font-size: 1.3em;
+article p{
+    font-size: 1.5em;
     color: black;
 }
-
+legend{
+    width: 30vw;
+}
+fieldset{
+    border: 3px solid var(--cor1);
+    border-radius: 5px 20px 5px 20px;
+    background-color: var(--cor3);
+}
 img{
-    border-radius: 20px;
+    border-radius: 30px;
+    width: 50%;
 }
 article h1, p{
     padding: 20px;
@@ -35,21 +49,49 @@ article h1, p{
 h1{
     text-align: center;
     padding: 25px;
-    font-size: 2;
+    font-size: 3em;
+}
+aside ul img{
+    width: 35%;
 }
 aside{
     margin: 0 auto;
-    background-image: radial-gradient(rgb(0, 182, 206), rgb(0, 67, 129));
     border-radius: 20px;
     width: 80%;
     padding: 25px;
-    border: 1px solid black;
+    background-image: url(imagens/leek-3b7c7819069c1d1e.png);
+    background-size: 15%;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 }
 aside p{
-    font-size: 1.3em;
+    font-size: 1.5em;
+}
+#resumo{
+    color: rgb(212, 6, 85);
 }
 aside li{
     color: rgb(255, 255, 255);
-    font-size: 1.5em;
+    font-size: 1.7em;
     padding: 5px;
+}
+::selection{
+    background-color: rgb(0, 134, 134);
+    color: white;
+}
+::-webkit-scrollbar{
+    background-color: rgb(73, 73, 73);
+    width: 15px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--cor3);
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover{
+    transition: 1s;
+    background-color: var(--cor1);
+}
+@media screen and (max-width:500px) {
+    img{
+        width: 90%;
+    }
 }
