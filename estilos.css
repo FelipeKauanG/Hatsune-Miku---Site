@@ -1,0 +1,55 @@
+*{
+    image-rendering: pixelated;
+    padding: 0;
+}
+:root{
+    --cor1: rgba(0, 255, 247, 0.5);
+    --cor2: rgba(0, 129, 129, 0.5);
+}
+body{
+    background-color: gray;
+    display: flex;
+}
+
+article{
+    text-align: center;
+    width: 80%;
+    margin: 10px auto;
+    border-radius: 20px;
+    background-image: radial-gradient(rgb(0, 182, 206), rgb(0, 67, 129));
+    padding: 25px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    border: 1px solid black;
+}
+article p,h1{
+    font-size: 1.3em;
+    color: black;
+}
+
+img{
+    border-radius: 20px;
+}
+article h1, p{
+    padding: 20px;
+}
+h1{
+    text-align: center;
+    padding: 25px;
+    font-size: 2;
+}
+aside{
+    margin: 0 auto;
+    background-image: radial-gradient(rgb(0, 182, 206), rgb(0, 67, 129));
+    border-radius: 20px;
+    width: 80%;
+    padding: 25px;
+    border: 1px solid black;
+}
+aside p{
+    font-size: 1.3em;
+}
+aside li{
+    color: rgb(255, 255, 255);
+    font-size: 1.5em;
+    padding: 5px;
+}
