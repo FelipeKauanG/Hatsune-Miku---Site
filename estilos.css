@@ -31,8 +31,8 @@ article p{
     font-size: 1.5em;
     color: black;
 }
-legend{
-    width: 30vw;
+legend img{
+    width: 200px;
 }
 fieldset{
     border: 3px solid var(--cor1);
@@ -41,7 +41,7 @@ fieldset{
 }
 img{
     border-radius: 30px;
-    width: 50%;
+    width: 400px;
 }
 article h1, p{
     padding: 20px;
@@ -52,7 +52,7 @@ h1{
     font-size: 3em;
 }
 aside ul img{
-    width: 35%;
+    width: 300px;
 }
 aside{
     margin: 0 auto;
